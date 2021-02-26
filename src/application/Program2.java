@@ -1,10 +1,12 @@
 package application;
 
+import java.util.List;
 import java.util.Scanner;
 
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
+import model.entities.Seller;
 
 public class Program2 {
 
@@ -18,6 +20,16 @@ public class Program2 {
 		System.out.println("====== TEST 1: DEPARTMENT find By Id ======");
 		Department department = departmentDao.findById(1);
 		System.out.println(department);
+		
+		System.out.println(); 
+		System.out.println("====== TEST 2: DEPARTMENT find All ======");
+		List<Department> list = departmentDao.findAll();
+		for ( Department obj : list) {
+			System.out.println(obj);
+		}
+		
+		
+		
 		
 		sc.close();
 	}
