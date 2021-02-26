@@ -42,6 +42,13 @@ public class Program2 {
 		departmentDao.update(department);
 		System.out.println("Update Competed!");
 		
+		System.out.println();
+		System.out.println("====== TEST 5: DEPARTMENT DELETE ======");
+		System.out.println("Digite o ID para ser deletado: ");
+		int id = sc.nextInt();
+		departmentDao.deleteById(id);
+		System.out.println("Delete Completed!");
+
 		
 		sc.close();
 	}
