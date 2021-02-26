@@ -1,5 +1,6 @@
 package application;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -28,6 +29,11 @@ public class Program2 {
 			System.out.println(obj);
 		}
 		
+		System.out.println(); 
+		System.out.println("====== TEST 3: DEPARTMENT INSERT ======");
+		Department depart = new Department(null, "Comida");
+		departmentDao.insert(depart);
+		System.out.println("Insert! Novo Id: " + depart.getId());
 		
 		
 		
