@@ -20,7 +20,6 @@ public class Program {
 		System.out.println(); // Aula 248
 		System.out.println("====== TEST 1: seller find By Id ======");
 		Seller seller = sellerDao.findById(3);
-		
 		System.out.println(seller);
 
 		System.out.println(); // Aula 249
